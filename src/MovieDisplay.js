@@ -7,14 +7,18 @@ class MovieDisplay extends Component
 {
   render() 
   {
-  	const mapping = this.props.moviearray.map(function(value) {
+  	/*Storing the data retrieved from the api along with the mapping in the variable data(ES6 context) */
+  	const  data= this.props.moviearray.map(function(value) {
 
 				
 
 			return(
+				/*Storing the unique ID as key for proper retrieval*/
 
 				<ol key={value.imdbID} className="item">
-				
+
+				/*Displaying the movie list in the form of a jumbotron using a jumbotron class*/
+
 				 <section className="container" id="container">
 								               <section className="jumbotron" style={{"margin-top": "10%"}}>
 								                   
@@ -24,9 +28,7 @@ class MovieDisplay extends Component
 								                   
 								                  
 								               </section>
-
-
-								</section>
+				</section>
 
                    
 
@@ -37,6 +39,7 @@ class MovieDisplay extends Component
 				);
 		}.bind(this));
 
+/*Returning the data mapped*/
     return (
    
       
@@ -44,7 +47,7 @@ class MovieDisplay extends Component
       { //Check if message failed
         (this.props.boolean == true)
           ? <div>  
-           {mapping}
+           {data}
 		     </div> 
           : <div></div> 
       } 
@@ -53,5 +56,5 @@ class MovieDisplay extends Component
   }
 }
 
-
+/*Exporting the component so that it can be used in the another files.*/
 export default MovieDisplay;
