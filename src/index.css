@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: darkgrey
+}
+
+#search
+{
+    background-color: #eaf8fc;
+    background-image: linear-gradient(#fff, #d4e8ec);
+    border-radius: 35px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c4d9df #a4c3ca #83afb7;            
+    width: 500px;
+    height: 55px;
+
+    margin: 100px auto 50px;
+    margin-top: 50px;
+    overflow: hidden; /* Clear floats */
+     margin-left: 400px;
+
+}
+
+#btn{
+	border-color: #c4d9df #a4c3ca #83afb7;            
+    width: 100px;
+    height: 35px;
+    border-style: solid;
+     overflow: hidden;
+ 	border-radius: 35px;
+    margin-top: 70px;
+    margin-right:300px;
+    padding-left: 10px;
+
+
+}
+
+
